@@ -1,0 +1,25 @@
+.Home-Page-Container {
+    position: relative;
+    height: 75vh;
+    overflow: hidden;
+
+    /* display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(26, 25, 24, 0.774), rgba(103, 105, 241, 0.397)), url(../../../public/img/bg3.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+}
+/* 
+.Home-Page-Container::after {
+    position: absolute;
+    content: '';
+    width: 130%;
+    height: 500px;
+    background-color: #ffa6008f;
+    transform: rotate(-10deg);
+    bottom: -40px !important;
+    left: -20px;
+    z-index: 999;
+}    */
