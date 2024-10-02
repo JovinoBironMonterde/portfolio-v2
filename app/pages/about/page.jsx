@@ -48,7 +48,7 @@ const About = () => {
                 Hello! I&#39;m Jovi Monterde, a passionate frontend developer with a love for creating user-friendly web experiences.
                 </Typography>
                 <Typography sx={{textAlign: 'justify'}}>
-                  I&#39;m always open to new opportunities and collaborations. If you have a project in mind or just want to chat about all things web development, feel free to reach out. Let's work together to bring your ideas to life on the web!
+                  I&#39;m always open to new opportunities and collaborations. If you have a project in mind or just want to chat about all things web development, feel free to reach out. Let&#39;s work together to bring your ideas to life on the web!
                 </Typography>
               </Box>
             </Grid>
