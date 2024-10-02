@@ -100,6 +100,7 @@ function SkillItem({ name, targetPercentage }) {
       }
       setPercentage(Math.round(current));
     }, 20); // Adjust time interval for smoothness
+    return () => clearInterval(interval); 
   };
 
   return (

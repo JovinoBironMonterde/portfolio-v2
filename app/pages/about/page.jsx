@@ -45,10 +45,10 @@ const About = () => {
                   About
                 </Typography>
                 <Typography sx={{ mb: 3, textAlign: 'justify' }}>
-                  Hello! I'm <b>Jovi Monterde</b>, a passionate frontend developer with a love for creating beautiful and user-friendly web experiences. With over 1 year of experience in the field, I've had the privilege of working on a wide range of projects, from single-page applications to complex e-commerce platforms.
+                Hello! I&#39;m Jovi Monterde, a passionate frontend developer with a love for creating user-friendly web experiences.
                 </Typography>
                 <Typography sx={{textAlign: 'justify'}}>
-                  I'm always open to new opportunities and collaborations. If you have a project in mind or just want to chat about all things web development, feel free to reach out. Let's work together to bring your ideas to life on the web!
+                  I&#39;m always open to new opportunities and collaborations. If you have a project in mind or just want to chat about all things web development, feel free to reach out. Let's work together to bring your ideas to life on the web!
                 </Typography>
               </Box>
             </Grid>

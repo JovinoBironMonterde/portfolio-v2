@@ -23,7 +23,7 @@ function page() {
               borderBottomRightRadius: '50%', width: '400px', 
               overflow: 'hidden', position: 'relative'}}> 
               <Box sx={{mb: -2}}>
-                <Image src="/img/image14.png" width={'1300'} height={1300} />
+                <Image src="/img/image14.png" width={'1300'}  alt="Description of the image" height={1300} />
               </Box>
             </Box>
           </Grid>
