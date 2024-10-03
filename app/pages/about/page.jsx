@@ -43,8 +43,8 @@ const About = () => {
       <Box sx={{ mb: 3, textAlign: 'justify' }}>
         <Typography variant="body1">
           Hello! I&apos;m Jovi Monterde, a passionate frontend developer with a love for creating user-friendly web experiences.
-        </Typography>
-      </Box>
+        </Typography> 
+      </Box>                                                                                                                                                            
       <Box sx={{ textAlign: 'justify' }}>
         <Typography variant="body1">
           I&apos;m always open to new opportunities and collaborations. If you have a project in mind or just want to chat about all things web development, feel free to reach out. Let&apos;s work together to bring your ideas to life on the web!

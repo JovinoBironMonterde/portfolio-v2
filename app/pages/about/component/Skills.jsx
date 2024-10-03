@@ -37,16 +37,16 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Skills() {
   const skillsData = [
-    { name: 'HTML', targetPercentage: 80 },
-    { name: 'CSS', targetPercentage: 70 },
-    { name: 'JavaScript', targetPercentage: 90 },
-    { name: 'React', targetPercentage: 75 },
+    { id: 1, name: 'HTML', targetPercentage: 80 },
+    { id: 2, name: 'CSS', targetPercentage: 70 },
+    { id: 3, name: 'JavaScript', targetPercentage: 90 },
+    { id: 4, name: 'React', targetPercentage: 75 },
   ];
 
   return (
     <div>
       {skillsData.map(skill => (
-        <SkillItem key={skill.name} name={skill.name} targetPercentage={skill.targetPercentage} />
+        <SkillItem key={skill.id} name={skill.name} targetPercentage={skill.targetPercentage} />
       ))}
     </div>
   );
