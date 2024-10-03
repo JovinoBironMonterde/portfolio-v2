@@ -25,11 +25,6 @@ const About = () => {
           display: 'flex',
           alignItems: 'center',
           py:10,
-          //  backgroundColor: '#017598',
-          // backgroundImage: `linear-gradient(to bottom, rgba(26, 25, 24, 0.774), rgba(103, 105, 241, 0.397)), url('/img/bg1.jpeg')`, // Use the gradient and the image
-          // backgroundSize: 'cover', // Adjusts the image to cover the entire Box
-          // backgroundPosition: 'center', // Centers the image within the Box
-          // backgroundAttachment: 'fixed',
         }}
       >
         <Box sx={{ flexGrow: 1 }}>
