@@ -40,7 +40,6 @@ function Experience() {
           </Typography>
         </Box>
       </Box>
-
     </div>
   );
 }
