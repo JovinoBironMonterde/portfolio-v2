@@ -43,17 +43,13 @@ function Skills() {
     { name: 'CSS', targetPercentage: 70 },
     { name: 'JavaScript', targetPercentage: 90 },
     { name: 'React', targetPercentage: 75 },
-    { name: 'React', targetPercentage: 75 },
-    { name: 'React', targetPercentage: 75 },
-    { name: 'React', targetPercentage: 75 },
-    { name: 'React', targetPercentage: 75 },
-    { name: 'React', targetPercentage: 75 },
+    // Remove duplicate entries
   ];
 
   return (
     <div>
-      {skillsData.map((skill, index) => (
-        <SkillItem key={index} name={skill.name} targetPercentage={skill.targetPercentage} />
+      {skillsData.map((skill) => (
+        <SkillItem key={skill.name} name={skill.name} targetPercentage={skill.targetPercentage} />
       ))}
     </div>
   );
@@ -106,8 +102,8 @@ function SkillItem({ name, targetPercentage }) {
     <Box ref={skillRef}>
       <Item>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Box sx={{width: '100%'}}>
-            <Typography sx={{ ...TitleStyles, pr:2 }}>{name}</Typography>
+          <Box sx={{ width: '100%' }}>
+            <Typography sx={{ ...TitleStyles, pr: 2 }}>{name}</Typography>
             <Box sx={OuterBar}>
               <Box sx={{ ...InnerBarStyles, width }}></Box>
             </Box>
