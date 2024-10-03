@@ -37,17 +37,20 @@ const About = () => {
             </Grid>
             <Grid item xs={12} md={6} xl={6}>
             <Box sx={{ p: { xl: 8, md: 2, xs: 2 } }}>
-              <Typography variant="h4" sx={{ fontWeight: 900 }}>
-                About
-              </Typography>
-              <Typography sx={{ mb: 3, textAlign: 'justify' }}>
-                Hello! I&apos;m Jovi Monterde, a passionate frontend developer with a love for creating user-friendly web experiences.
-              </Typography>
-              <Typography sx={{ textAlign: 'justify' }}>
-                I&apos;m always open to new opportunities and collaborations. If you have a project in mind or just want to chat about all things web development, feel free to reach out. Let&apos;s work together to bring your ideas to life on the web!
-              </Typography>
-            </Box>
-
+      <Typography variant="h4" sx={{ fontWeight: 900 }}>
+        About
+      </Typography>
+      <Box sx={{ mb: 3, textAlign: 'justify' }}>
+        <Typography variant="body1">
+          Hello! I&apos;m Jovi Monterde, a passionate frontend developer with a love for creating user-friendly web experiences.
+        </Typography>
+      </Box>
+      <Box sx={{ textAlign: 'justify' }}>
+        <Typography variant="body1">
+          I&apos;m always open to new opportunities and collaborations. If you have a project in mind or just want to chat about all things web development, feel free to reach out. Let&apos;s work together to bring your ideas to life on the web!
+        </Typography>
+      </Box>
+    </Box>
             </Grid>
 
           </Grid>

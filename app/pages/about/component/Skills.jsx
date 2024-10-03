@@ -16,9 +16,7 @@ const InnerBarStyles = {
   height: '14px',
   background: 'green',
   borderRadius: '25px',
-  left: { md: 0, xl: 'unset' },
-  right: { xl: 0, xs: 'unset' },
-  transition: 'width 1s ease-in-out', // Animation for smooth transition
+  transition: 'width 1s ease-in-out',
 };
 
 const TitleStyles = {
@@ -43,12 +41,11 @@ function Skills() {
     { name: 'CSS', targetPercentage: 70 },
     { name: 'JavaScript', targetPercentage: 90 },
     { name: 'React', targetPercentage: 75 },
-    // Remove duplicate entries
   ];
 
   return (
     <div>
-      {skillsData.map((skill) => (
+      {skillsData.map(skill => (
         <SkillItem key={skill.name} name={skill.name} targetPercentage={skill.targetPercentage} />
       ))}
     </div>
@@ -71,7 +68,7 @@ function SkillItem({ name, targetPercentage }) {
           }
         });
       },
-      { threshold: 0.1 } // Adjust threshold to start animation earlier
+      { threshold: 0.1 }
     );
 
     if (skillRef.current) {
@@ -96,6 +93,8 @@ function SkillItem({ name, targetPercentage }) {
       }
       setPercentage(Math.round(current));
     }, 20); // Adjust time interval for smoothness
+
+    return () => clearInterval(interval); // Clean up the interval
   };
 
   return (
@@ -105,7 +104,7 @@ function SkillItem({ name, targetPercentage }) {
           <Box sx={{ width: '100%' }}>
             <Typography sx={{ ...TitleStyles, pr: 2 }}>{name}</Typography>
             <Box sx={OuterBar}>
-              <Box sx={{ ...InnerBarStyles, width }}></Box>
+              <Box sx={{ ...InnerBarStyles, width }} />
             </Box>
           </Box>
           <Typography variant="h3" sx={{ ml: 2 }}>
