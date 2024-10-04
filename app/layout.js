@@ -11,6 +11,7 @@ import MiniDrawer from "./components/MiniDrawer";
 import { useEffect, useState } from "react";
 import { usePathname } from 'next/navigation';
 import CircularProgress from '@mui/material/CircularProgress';
+import AppbarMobile from "./components/AppbarMobile";
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700", "900"] });
@@ -43,7 +44,7 @@ export default function RootLayout({ children }) {
             bgcolor: '#2a517a85',
             display: 'flex',
             alignItems: 'center',
-            p: 3,
+            p:{xl:3, md:3, xs:.8},
           }}
         >
           <Box
@@ -75,8 +76,20 @@ export default function RootLayout({ children }) {
             }}
           >
             <RevealAnimation />
-            <Box sx={{ position: "sticky", top: 0, bgcolor: '#087ea2', zIndex: 9999 }}>
-              <AppBar />
+            <Box sx={{ position: "sticky", top: 0, bgcolor: '#087ea2', zIndex: 9999, py:1, px:2 }}>
+              <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+                <Box>
+                  Logo
+                </Box>
+                <Box>
+                  <Box sx={{display:{xl:'block', md:'none', xs: 'none'}}}> 
+                    <AppBar />
+                  </Box>
+                  <Box sx={{display:{xl:'none', md:'block', xs: 'block'}}}>
+                    <AppbarMobile/>
+                  </Box>
+                </Box>
+              </Box>
             </Box>
             <Box sx={{ p: 0 }}>
               {loading ? (

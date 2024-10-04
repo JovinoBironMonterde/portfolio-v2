@@ -28,18 +28,17 @@ export default function LeftDrawer() {
 
   return (
     <div>
-      <Box
-      sx={{
+      <Box sx={{
         position: 'fixed', 
-        top: '110px', 
-        left: '40px',
         zIndex:99999, 
-        bgcolor: 'gray',
+        bgcolor: '#087ea2',
         borderRadius: '50%',
-        p:0
+        p:0,
+        top:{xl: '75px', md:'75px', xs:'54px'},
+        left:{xl: '35px', md:'35px', xs:'14px'}
         }}>
         <IconButton onClick={handleToggleDrawer(true)}  aria-label="Example">
-            <PersonIcon />
+            <PersonIcon sx={{color: "#1ed7cd", fontSize:30}} />
         </IconButton>
         </Box>
       <Drawer anchor="left" open={open} onClose={handleToggleDrawer(false)} sx={{zIndex:999999, pr:4}}>
@@ -64,17 +63,16 @@ export default function LeftDrawer() {
       <IconButton onClick={handleToggleDrawer(false)}  aria-label="Example">
         close
       </IconButton>
-        <Stack spacing={1} sx={{ alignItems: 'center', p:3, bgcolor: '#087ea2', }}>
-         <Stack direction="row" spacing={2} sx={{ display: 'flex', justifyContent: 'center'}}>
+      <Stack spacing={1} sx={{ alignItems: 'center', p:3, bgcolor: '#087ea2', }}>
+        <Stack direction="row" spacing={2} sx={{ display: 'flex', justifyContent: 'center'}}>
           <Avatar
               alt="Remy Sharp"
               src="/img/image12.png"  // If you move the image to the public/img folder
               sx={{ width: 256, height: 256, bgcolor: '#f4f4f4' }}
             />
-          </Stack>
-          <Chip label="primary" fontSize="30px" color="primary" />
-          </Stack>
-        
+        </Stack>
+        <Chip label="primary" fontSize="30px" color="primary" />
+      </Stack>
     </div>
     </Box>
       </Drawer>

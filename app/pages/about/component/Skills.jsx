@@ -17,14 +17,13 @@ const InnerBarStyles = {
   background: 'green',
   borderRadius: '25px',
   transition: 'width 1s ease-in-out',
+  right: {md: 0, xs:'unset', xl: '0'},
+  left: {md: 'unset', xs:0, xl: 'unset'},
 };
 
 const TitleStyles = {
   width: '100%',
-  textAlign: {
-    md: 'left',
-    xl: 'right',
-  },
+  textAlign: { xs: 'left', md:'right', xl: 'right'}
 };
 
 const Item = styled(Paper)(({ theme }) => ({
