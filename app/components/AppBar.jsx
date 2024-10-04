@@ -29,9 +29,6 @@ function AppBar() {
     <header>
       <nav>
         <Box sx={{width: '100%',display: 'flex', justifyContent: 'space-between', px:4, py:1}}>
-          <Box sx={{width: '100%'}}>
-          dfdf
-          </Box>
           <Box>
             <Link
               href="../pages/home"
