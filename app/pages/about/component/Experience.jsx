@@ -12,7 +12,7 @@ function Experience() {
           <Typography variant="subtitle1">September 2016 - December 2021</Typography>
           <Typography variant="h6">Security Control Officer</Typography>
           <Typography sx={{fontSize: 14}}>
-            As a Security Control Officer at Concentrix, I was responsible for the activation and deactivation of badges for active, AWOL (Absent Without Leave), and resigned employees. My role involved monitoring and maintaining surveillance systems, observing suspicious activities, and alerting authorities during security breaches. I prepared detailed incident reports, ensured the proper maintenance of equipment, and complied with company policies. Additionally, I collaborated closely with security teams to enhance overall safety protocols and address any potential fraud or threats effectively.
+            As a Security Control Officer at Concentrix, I was responsible for the activation and deactivation of badges for active, AWOL, and resigned employees. My role involved monitoring and maintaining surveillance systems, observing suspicious activities, and alerting authorities during security breaches. I prepared detailed incident reports, ensured the proper maintenance of equipment, and complied with company policies. Additionally, I collaborated closely with security teams to enhance overall safety protocols and address any potential fraud or threats effectively.
           </Typography>
           {/* <Chip label="Active"  color="success" sx={{ mt: 1 }}/> */}
           {/* <Chip label="Resigned" color="error" sx={{ mt: 2 }} /> */}
@@ -23,7 +23,7 @@ function Experience() {
           <Typography variant="subtitle1">September 2022 - November 2022</Typography>
           <Typography variant="h6">Office Admin</Typography>
           <Typography sx={{fontSize: 14}}>
-            Maintain organized and up-to-date files, documents, and records related to the company's operations, including customer orders, invoices, and contracts.
+            Maintain organized and up-to-date files, documents, and records related to the company&apos;s operations, including customer orders, invoices, and contracts.
           </Typography>
           {/* <Chip label="Active"  color="success" sx={{ mt: 1 }}/> */}
           {/* <Chip label="Resigned" color="error" sx={{ mt: 2 }} /> */}

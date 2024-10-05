@@ -70,23 +70,25 @@ function SkillItem({ name, targetPercentage }) {
           if (entry.isIntersecting) {
             setWidth(`${targetPercentage}%`);
             animatePercentage(targetPercentage);
-            observer.unobserve(entry.target); // Stop observing after animation starts
+            observer.unobserve(entry.target);
           }
         });
       },
       { threshold: 0.1 }
     );
-
-    if (skillRef.current) {
-      observer.observe(skillRef.current);
+  
+    const currentRef = skillRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
-
+  
     return () => {
-      if (skillRef.current) {
-        observer.unobserve(skillRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [targetPercentage]);
+  
 
   const animatePercentage = (target) => {
     let current = 0;
