@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
-
+import CloseIcon from '@mui/icons-material/Close';
 import PersonIcon from '@mui/icons-material/Person';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
@@ -27,7 +27,7 @@ export default function LeftDrawer() {
 
 
   return (
-    <div>
+    <Box sx={{width: '100%'}}>
       <Box sx={{
         position: 'fixed', 
         zIndex:99999, 
@@ -41,41 +41,48 @@ export default function LeftDrawer() {
             <PersonIcon sx={{color: "#1ed7cd", fontSize:30}} />
         </IconButton>
         </Box>
-      <Drawer anchor="left" open={open} onClose={handleToggleDrawer(false)} sx={{zIndex:999999, pr:4}}>
-      <Box
-        sx={{
-          width: '100%',
-          // maxWidth: 350,
-          height: '80%',
-          my: 'auto',
-          mr:20,
-          bgcolor: '#f4f4f4',
-          borderRadius: '10px',
-          overflow: 'hidden',
-          boxShadow: '2px 4px 10px rgba(0, 0, 0, .5)', // Example custom boxShadow
-          height:{
-            xl: '80%', md: '80%', xs: '100%'
-          }
-        }}
-      >
+        <Drawer anchor="left" open={open} onClose={handleToggleDrawer(false)} sx={{ width: '100%', zIndex:999999, pr:4}}>
+        <Box
+          sx={{
+            width: '100%',
+            // maxWidth: 350,
+            height: '80%',
+            my: 'auto',
+            mr:{
+              xl:20, xs:0
+            },
+            bgcolor: '#f4f4f4',
+            borderRadius: '10px',
+            overflow: 'hidden',
+            boxShadow: '2px 4px 10px rgba(0, 0, 0, .5)', // Example custom boxShadow
+            height:{
+              xl: '80%', md: '80%', xs: '100%'
+            }
+          }}
+        >
 
-    <div>
-      <IconButton onClick={handleToggleDrawer(false)}  aria-label="Example">
-        close
-      </IconButton>
-      <Stack spacing={1} sx={{ alignItems: 'center', p:3, bgcolor: '#087ea2', }}>
-        <Stack direction="row" spacing={2} sx={{ display: 'flex', justifyContent: 'center'}}>
-          <Avatar
-              alt="Remy Sharp"
-              src="/img/image12.png"  // If you move the image to the public/img folder
-              sx={{ width: 256, height: 256, bgcolor: '#f4f4f4' }}
-            />
-        </Stack>
-        <Chip label="primary" fontSize="30px" color="primary" />
-      </Stack>
-    </div>
-    </Box>
+          <Box sx={{width: '100vw', maxWidth: '550px', bgcolor: '#087ea2', }}>
+            <Box>
+              <IconButton onClick={handleToggleDrawer(false)} aria-label="Example" sx={{p:3, float: 'right'}}>
+                <CloseIcon />
+              </IconButton>
+            </Box>
+            <Stack spacing={1} sx={{ width:'100%', alignItems: 'center', pb:8, bgcolor: '#087ea2', }}>
+              <Stack direction="row" spacing={2} sx={{ display: 'flex', justifyContent: 'center'}}>
+                <Avatar
+                    alt="Remy Sharp"
+                    src="/img/image12.png"  // If you move the image to the public/img folder
+                    sx={{ width: 200, height: 200, bgcolor: '#f4f4f4' }}
+                  />
+              </Stack>
+              {/* <Chip label="Frontend Developer" fontSize="70px" color="primary" /> */}
+            </Stack>
+          </Box>
+          <Box sx={{display: 'flex', justifyContent: 'center'}}>
+            <Chip label="Jovino Monterde" color="primary" sx={{fontSize: '20px', p:2, float: 'center'}} />
+          </Box>
+        </Box>
       </Drawer>
-    </div>
+    </Box>
   );
 }

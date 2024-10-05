@@ -34,11 +34,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Box sx={{ display: { xl: 'none', md: 'block', xs: 'block' } }}>
+        <Box sx={{ width: '100%', display: { xl: 'none', md: 'block', xs: 'block' } }}>
           <MiniDrawer />
         </Box>
         <Box
           sx={{
+            width: '100%',
             maxWidth: '100vw',
             height: '100vh',
             bgcolor: '#2a517a85',
