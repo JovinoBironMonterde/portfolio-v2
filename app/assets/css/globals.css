@@ -127,3 +127,15 @@ nav {
   }
 }
 /* END REVEAL ANIMATION */
+
+
+/* .sdfdsf{
+  background-color: #0070f3;
+  width: 300px !important;
+} */
+ @media(max-width: 600px) {
+  .SvgIcon{
+    width: 300px !important;
+    height: 300px !important;
+  }
+ }
