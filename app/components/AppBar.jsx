@@ -30,6 +30,12 @@ function AppBar() {
       <nav>
         <Box sx={{width: '100%',display: 'flex', justifyContent: 'space-between', px:4, py:1}}>
           <Box>
+          {/* <Link
+              href="/home"
+              style={pathname === '/home' ? activeStyle : defaultStyle}
+            >
+              Home
+            </Link>  */}
             <Link
               href="../pages/home"
               style={pathname === '/pages/home' ? activeStyle : defaultStyle}

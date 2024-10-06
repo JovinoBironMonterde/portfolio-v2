@@ -7,10 +7,14 @@ import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import CloseIcon from '@mui/icons-material/Close';
 import PersonIcon from '@mui/icons-material/Person';
 import ImageIcon from '@mui/icons-material/Image';
-import WorkIcon from '@mui/icons-material/Work';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
+import WorkIcon from '@mui/icons-material/Work';
 
 
 
@@ -81,7 +85,7 @@ export default function LeftDrawer() {
           <Box sx={{display: 'flex', justifyContent: 'center', mb:6}}>
             <Chip label="Jovino Monterde"  
             sx={{
-              color: '#01222c',
+              color: '#fff',
               bgcolor: '#05a7be',
               fontSize: '25px',
               p:3, 
@@ -90,60 +94,45 @@ export default function LeftDrawer() {
               boxShadow: '2px 4px 10px rgba(0, 0, 0, .3)',
               mt: -3}} />
           </Box>
-          <Box sx={{p:3}}>
-          <List sx={{ width: '100%', maxWidth: '355px', }}>
-            <ListItem>
-              <ListItemAvatar>
-                <Avatar>
-                  <PhoneIcon />
-                </Avatar>
-              </ListItemAvatar>
-              <ListItemText primary="Mobile Number" secondary="09704566075" />
-            </ListItem>
-            <ListItem>
-              <ListItemAvatar>
-                <Avatar>
-                  <LocationOnIcon />
-                </Avatar>
-              </ListItemAvatar>
-              <ListItemText primary="Address" secondary="Blk 66 Lot 25, Channel Ridge View Dist I, Babatngon Leyte" />
-            </ListItem>
-            <ListItem>
-              <ListItemAvatar>
-                <Avatar>
-                  <LocationOnIcon />
-                </Avatar>
-              </ListItemAvatar>
-              <ListItemText primary="Vacation" secondary="July 20, 2014" />
-            </ListItem>
-            <ListItem>
-              <ListItemAvatar>
-                <Avatar>
-                  <BeachAccessIcon />
-                </Avatar>
-              </ListItemAvatar>
-              <ListItemText primary="Vacation" secondary="July 20, 2014" />
-            </ListItem>
-          </List>
+          <Box sx={{py:3, px:2}}>
+            <List sx={{ width: '100%', maxWidth: '355px', }}>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <WorkIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="Freelancer" secondary="Front-End Developer" />
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <PhoneIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="Mobile Number" secondary="09704566075" />
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <EmailIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="Email" secondary="jovinobironmonterdejr2024@gmail.com" />
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar>
+                    <LocationOnIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="Address" secondary="Blk 66 Lot 25, Channel Ridge View Dist I, Babatngon Leyte" />
+              </ListItem>
+            </List>
           </Box>
           <Divider />
           <Stack direction="row" spacing={3} sx={{justifyContent: 'center', alignItems: 'center', pt:5 }}>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                <IconButton aria-label="facebook" size="large" 
-                  sx={{ 
-                    bgcolor: '#017598 ',  
-                    color: 'white', 
-                    '&:hover': { 
-                      bgcolor: '#0591a5' ,
-                    }
-                  }}
-                >
-                  <PhoneIcon />
-                </IconButton>
-              </a>
-            
-       
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/jhovi.norib/" target="_blank" rel="noopener noreferrer">
                 <IconButton aria-label="facebook" size="large" 
                   sx={{ 
                     bgcolor: '#017598 ',  
@@ -157,8 +146,7 @@ export default function LeftDrawer() {
                 </IconButton>
               </a>
             
-       
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/jhovi1993/" target="_blank" rel="noopener noreferrer">
                 <IconButton aria-label="facebook" size="large" 
                   sx={{ 
                     bgcolor: '#017598 ',  
@@ -168,12 +156,11 @@ export default function LeftDrawer() {
                     }
                   }}
                 >
-                  <FacebookIcon />
+                  <InstagramIcon />
                 </IconButton>
               </a>
             
-       
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/jovinobironmonterde/" target="_blank" rel="noopener noreferrer">
                 <IconButton aria-label="facebook" size="large" 
                   sx={{ 
                     bgcolor: '#017598 ',  
@@ -183,7 +170,21 @@ export default function LeftDrawer() {
                     }
                   }}
                 >
-                  <FacebookIcon />
+                  <LinkedInIcon />
+                </IconButton>
+              </a>
+            
+              <a href="https://github.com/JovinoBironMonterde" target="_blank" rel="noopener noreferrer">
+                <IconButton aria-label="facebook" size="large" 
+                  sx={{ 
+                    bgcolor: '#017598 ',  
+                    color: 'white', 
+                    '&:hover': { 
+                      bgcolor: '#0591a5' ,
+                    }
+                  }}
+                >
+                  <GitHubIcon />
                 </IconButton>
               </a>
             

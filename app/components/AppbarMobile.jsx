@@ -80,7 +80,8 @@ function AppbarMobile() {
 
   return (
     <div>
-      <Box onClick={toggleDrawer(true)} sx={{color: '#fff'}}><SegmentIcon/></Box>
+      <Box>
+      <Box onClick={toggleDrawer(true)} sx={{color: '#fff', fontSize:30}}><SegmentIcon/></Box>
       <Drawer
         anchor="top"
         open={topOpen}
@@ -89,6 +90,7 @@ function AppbarMobile() {
       >
         {list()}
       </Drawer>
+      </Box>
     </div>
   );
 }

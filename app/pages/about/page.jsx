@@ -62,27 +62,30 @@ const About = () => {
           </Grid>
         </Box>
       </Box>
-      <Box sx={{ height: 'auto', bgcolor: '#017598', py:3 }}>
+      <Box sx={{ height: 'auto', bgcolor: '#017598', py:8 }}>
       <Box 
-      sx={{ 
-        flexGrow: 1,
-        position: 'relative',
-        "::before": {
-          position: 'absolute',
-          content: '""', 
-          width: "5px", 
-          height: "100%",
-          left: '50%',
-          backgroundColor: "gray", 
-          display: {
-            xl: 'block', 
-            md: 'block', 
-            xs: 'none'
-          }
-        },
-      }}>
+        sx={{ 
+          flexGrow: 1,
+          position: 'relative',
+          "::before": {
+            position: 'absolute',
+            content: '""', 
+            width: "5px", 
+            height: "100%",
+            left: '50%',
+            backgroundColor: "gray", 
+            display: {
+              xl: 'block', 
+              md: 'block', 
+              xs: 'none'
+            }
+          },
+        }}>
           <Grid container spacing={2} sx={{ display: 'flex', alignItems: 'center', p:{xl:8, md:4, xs:2}}}>
             <Grid item xs={12} md={5.5} xl={5.5}>
+              {/* <Box sx={{textAlign: 'right'}}>
+                <Typography variant='h4'>Profession</Typography>
+              </Box> */}
               <Skills/>
             </Grid>
             <Grid item xs={6} md={1} xl={1} textAlign={'center'}sx={{ display:{xl: 'block', md:'block', xs:'none'}}}>

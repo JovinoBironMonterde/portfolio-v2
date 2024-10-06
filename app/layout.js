@@ -16,6 +16,7 @@ import AppbarMobile from "./components/AppbarMobile";
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
+
 export default function RootLayout({ children }) {
   const [loading, setLoading] = useState(false);
   const pathname = usePathname();
@@ -51,7 +52,7 @@ export default function RootLayout({ children }) {
           <Box
             sx={{
               width: '450px',
-              height: '80%',
+              height: '90%',
               bgcolor: '#f4f4f4',
               borderRadius: 5,
               overflow: "hidden",
@@ -77,7 +78,7 @@ export default function RootLayout({ children }) {
             }}
           >
             <RevealAnimation />
-            <Box sx={{ position: "sticky", top: 0, bgcolor: '#087ea2', zIndex: 9999, py:1, px:2 }}>
+            <Box sx={{ position: "sticky", top: 0, bgcolor: '#066a89', zIndex: 9999, py:1, px:2 }}>
               <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
                 <Box>
                   Logo
