@@ -45,12 +45,11 @@ export default function LeftDrawer() {
             <PersonIcon sx={{color: "#1ed7cd", fontSize:30}} />
         </IconButton>
         </Box>
-        <Drawer anchor="left" open={open} onClose={handleToggleDrawer(false)} sx={{ width: '100%', zIndex:999999, pr:4}}>
+        <Drawer anchor="left" open={open} onClose={handleToggleDrawer(false)} sx={{ width: '100vh', zIndex:999999, pr:4}}>
         <Box
           sx={{
             width: '100%',
-            // maxWidth: 350,
-            height: '90%',
+            height: '100%',
             my: 'auto',
             mr:{
               xl:20, xs:0
@@ -60,29 +59,29 @@ export default function LeftDrawer() {
             overflow: 'hidden',
             boxShadow: '2px 4px 10px rgba(0, 0, 0, .5)', // Example custom boxShadow
             height:{
-              xl: '90%', md: '0%', xs: '100%'
+              xl: '90%', md: '100%', xs: '100%'
             }
           }}
         >
 
           <Box sx={{width: '100vw', maxWidth: '450px', bgcolor: '#087ea2', }}>
             <Box>
-              <IconButton onClick={handleToggleDrawer(false)} aria-label="Example" sx={{p:3, float: 'right'}}>
+              <IconButton onClick={handleToggleDrawer(false)} aria-label="Example" sx={{p:2, float: 'right'}}>
                 <CloseIcon />
               </IconButton>
             </Box>
-            <Stack spacing={1} sx={{ width:'100%', alignItems: 'center', pb:8, bgcolor: '#087ea2', }}>
+            <Stack spacing={1} sx={{ width:'100%', alignItems: 'center', pb:6, bgcolor: '#087ea2', }}>
               <Stack direction="row" spacing={2} sx={{ display: 'flex', justifyContent: 'center'}}>
                 <Avatar
                     alt="Remy Sharp"
                     src="/img/image12.png"  // If you move the image to the public/img folder
-                    sx={{ width: 200, height: 200, bgcolor: '#f4f4f4' }}
+                    sx={{ width: 180, height: 180, bgcolor: '#f4f4f4' }}
                   />
               </Stack>
               {/* <Chip label="Frontend Developer" fontSize="70px" color="primary" /> */}
             </Stack>
           </Box>
-          <Box sx={{display: 'flex', justifyContent: 'center', mb:6}}>
+          <Box sx={{display: 'flex', justifyContent: 'center', mb:2}}>
             <Chip label="Jovino Monterde"  
             sx={{
               color: '#fff',
@@ -94,101 +93,106 @@ export default function LeftDrawer() {
               boxShadow: '2px 4px 10px rgba(0, 0, 0, .3)',
               mt: -3}} />
           </Box>
-          <Box sx={{py:3, px:2}}>
-            <List sx={{ width: '100%', maxWidth: '355px', }}>
-              <ListItem>
-                <ListItemAvatar>
-                  <Avatar>
-                    <WorkIcon />
-                  </Avatar>
-                </ListItemAvatar>
-                <ListItemText primary="Freelancer" secondary="Front-End Developer" />
-              </ListItem>
-              <ListItem>
-                <ListItemAvatar>
-                  <Avatar>
-                    <PhoneIcon />
-                  </Avatar>
-                </ListItemAvatar>
-                <ListItemText primary="Mobile Number" secondary="09704566075" />
-              </ListItem>
-              <ListItem>
-                <ListItemAvatar>
-                  <Avatar>
-                    <EmailIcon />
-                  </Avatar>
-                </ListItemAvatar>
-                <ListItemText primary="Email" secondary="jovinobironmonterdejr2024@gmail.com" />
-              </ListItem>
-              <ListItem>
-                <ListItemAvatar>
-                  <Avatar>
-                    <LocationOnIcon />
-                  </Avatar>
-                </ListItemAvatar>
-                <ListItemText primary="Address" secondary="Blk 66 Lot 25, Channel Ridge View Dist I, Babatngon Leyte" />
-              </ListItem>
-            </List>
+          <Box sx={{height: '400px', overflowY: 'scroll'}}>
+            <Box sx={{height:'auto',py:1, px:2}}>
+              <List sx={{ width: '100%', maxWidth: '355px', }}>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <WorkIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Freelancer" secondary="Front-End Developer" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <PhoneIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Mobile Number" secondary="09704566075" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <EmailIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Email" secondary="jovinobironmonterdejr2024@gmail.com" />
+                </ListItem>
+                <ListItem>
+                  <ListItemAvatar>
+                    <Avatar>
+                      <LocationOnIcon />
+                    </Avatar>
+                  </ListItemAvatar>
+                  <ListItemText primary="Address" secondary="Blk 66 Lot 25, Channel Ridge View Dist I, Babatngon Leyte" />
+                </ListItem>
+              </List>
+            </Box>
           </Box>
+          
           <Divider />
-          <Stack direction="row" spacing={3} sx={{justifyContent: 'center', alignItems: 'center', pt:5 }}>
-          <a href="https://www.facebook.com/jhovi.norib/" target="_blank" rel="noopener noreferrer">
-                <IconButton aria-label="facebook" size="large" 
-                  sx={{ 
-                    bgcolor: '#017598 ',  
-                    color: 'white', 
-                    '&:hover': { 
-                      bgcolor: '#0591a5' ,
-                    }
-                  }}
-                >
-                  <FacebookIcon />
-                </IconButton>
-              </a>
-            
-              <a href="https://www.instagram.com/jhovi1993/" target="_blank" rel="noopener noreferrer">
-                <IconButton aria-label="facebook" size="large" 
-                  sx={{ 
-                    bgcolor: '#017598 ',  
-                    color: 'white', 
-                    '&:hover': { 
-                      bgcolor: '#0591a5' ,
-                    }
-                  }}
-                >
-                  <InstagramIcon />
-                </IconButton>
-              </a>
-            
-              <a href="https://www.linkedin.com/in/jovinobironmonterde/" target="_blank" rel="noopener noreferrer">
-                <IconButton aria-label="facebook" size="large" 
-                  sx={{ 
-                    bgcolor: '#017598 ',  
-                    color: 'white', 
-                    '&:hover': { 
-                      bgcolor: '#0591a5' ,
-                    }
-                  }}
-                >
-                  <LinkedInIcon />
-                </IconButton>
-              </a>
-            
-              <a href="https://github.com/JovinoBironMonterde" target="_blank" rel="noopener noreferrer">
-                <IconButton aria-label="facebook" size="large" 
-                  sx={{ 
-                    bgcolor: '#017598 ',  
-                    color: 'white', 
-                    '&:hover': { 
-                      bgcolor: '#0591a5' ,
-                    }
-                  }}
-                >
-                  <GitHubIcon />
-                </IconButton>
-              </a>
-            
-          </Stack>
+          <Box sx={{width: '100%',position: 'sticky', left: '0', bottom: '0', py:3, bgcolor:'#087ea2'}}>
+            <Stack direction="row" spacing={3} sx={{justifyContent: 'center', alignItems: 'center' }}>
+              <a href="https://www.facebook.com/jhovi.norib/" target="_blank" rel="noopener noreferrer">
+                  <IconButton aria-label="facebook" size="large" 
+                    sx={{ 
+                      bgcolor: '#05a7be ',  
+                      color: 'white', 
+                      '&:hover': { 
+                        bgcolor: '#1ed7cd' ,
+                      }
+                    }}
+                  >
+                    <FacebookIcon />
+                  </IconButton>
+                </a>
+              
+                <a href="https://www.instagram.com/jhovi1993/" target="_blank" rel="noopener noreferrer">
+                  <IconButton aria-label="facebook" size="large" 
+                    sx={{ 
+                      bgcolor: '#05a7be ',  
+                      color: 'white', 
+                      '&:hover': { 
+                        bgcolor: '#1ed7cd' ,
+                      }
+                    }}
+                  >
+                    <InstagramIcon />
+                  </IconButton>
+                </a>
+              
+                <a href="https://www.linkedin.com/in/jovinobironmonterde/" target="_blank" rel="noopener noreferrer">
+                  <IconButton aria-label="facebook" size="large" 
+                    sx={{ 
+                      bgcolor: '#05a7be ',  
+                      color: 'white', 
+                      '&:hover': { 
+                        bgcolor: '#1ed7cd' ,
+                      }
+                    }}
+                  >
+                    <LinkedInIcon />
+                  </IconButton>
+                </a>
+              
+                <a href="https://github.com/JovinoBironMonterde" target="_blank" rel="noopener noreferrer">
+                  <IconButton aria-label="facebook" size="large" 
+                    sx={{ 
+                      bgcolor: '#05a7be ',  
+                      color: 'white', 
+                      '&:hover': { 
+                        bgcolor: '#1ed7cd' ,
+                      }
+                    }}
+                  >
+                    <GitHubIcon />
+                  </IconButton>
+                </a>
+              
+            </Stack>
+          </Box>
         </Box>
       </Drawer>
     </Box>

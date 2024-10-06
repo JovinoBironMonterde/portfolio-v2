@@ -2,13 +2,13 @@
     position: relative;
     height: 75vh;
     overflow: hidden;
-
-    /* display: flex;
+    color: #fff;
+    display: flex;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(26, 25, 24, 0.774), rgba(103, 105, 241, 0.397)), url(../../../public/img/bg3.webp);
+    background-image: linear-gradient(to bottom, #0990b986, #0175988c), url(../../../public/img/bg3.webp);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 
 }
 /* 
