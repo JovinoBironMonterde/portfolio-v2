@@ -1,18 +1,18 @@
 "use client";
 import * as React from 'react';
 
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
+import {Drawer, Stack, Box, Chip, IconButton, List, Divider, 
+  ListItem, ListItemText, ListItemAvatar, Avatar      } from '@mui/material';
+import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import CloseIcon from '@mui/icons-material/Close';
 import PersonIcon from '@mui/icons-material/Person';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import Chip from '@mui/material/Chip';
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
-import Image from 'next/image';
-import IconButton from '@mui/material/IconButton';
+import ImageIcon from '@mui/icons-material/Image';
+import WorkIcon from '@mui/icons-material/Work';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import PhoneIcon from '@mui/icons-material/Phone';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+
+
 
 export default function LeftDrawer() {
   const [open, setOpen] = React.useState(false);
@@ -46,7 +46,7 @@ export default function LeftDrawer() {
           sx={{
             width: '100%',
             // maxWidth: 350,
-            height: '80%',
+            height: '90%',
             my: 'auto',
             mr:{
               xl:20, xs:0
@@ -56,12 +56,12 @@ export default function LeftDrawer() {
             overflow: 'hidden',
             boxShadow: '2px 4px 10px rgba(0, 0, 0, .5)', // Example custom boxShadow
             height:{
-              xl: '80%', md: '80%', xs: '100%'
+              xl: '90%', md: '0%', xs: '100%'
             }
           }}
         >
 
-          <Box sx={{width: '100vw', maxWidth: '550px', bgcolor: '#087ea2', }}>
+          <Box sx={{width: '100vw', maxWidth: '450px', bgcolor: '#087ea2', }}>
             <Box>
               <IconButton onClick={handleToggleDrawer(false)} aria-label="Example" sx={{p:3, float: 'right'}}>
                 <CloseIcon />
@@ -78,9 +78,116 @@ export default function LeftDrawer() {
               {/* <Chip label="Frontend Developer" fontSize="70px" color="primary" /> */}
             </Stack>
           </Box>
-          <Box sx={{display: 'flex', justifyContent: 'center'}}>
-            <Chip label="Jovino Monterde" color="primary" sx={{fontSize: '20px', p:2, float: 'center'}} />
+          <Box sx={{display: 'flex', justifyContent: 'center', mb:6}}>
+            <Chip label="Jovino Monterde"  
+            sx={{
+              color: '#01222c',
+              bgcolor: '#05a7be',
+              fontSize: '25px',
+              p:3, 
+              float: 'center', 
+              position: 'absolute', 
+              boxShadow: '2px 4px 10px rgba(0, 0, 0, .3)',
+              mt: -3}} />
           </Box>
+          <Box sx={{p:3}}>
+          <List sx={{ width: '100%', maxWidth: '355px', }}>
+            <ListItem>
+              <ListItemAvatar>
+                <Avatar>
+                  <PhoneIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="Mobile Number" secondary="09704566075" />
+            </ListItem>
+            <ListItem>
+              <ListItemAvatar>
+                <Avatar>
+                  <LocationOnIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="Address" secondary="Blk 66 Lot 25, Channel Ridge View Dist I, Babatngon Leyte" />
+            </ListItem>
+            <ListItem>
+              <ListItemAvatar>
+                <Avatar>
+                  <LocationOnIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="Vacation" secondary="July 20, 2014" />
+            </ListItem>
+            <ListItem>
+              <ListItemAvatar>
+                <Avatar>
+                  <BeachAccessIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary="Vacation" secondary="July 20, 2014" />
+            </ListItem>
+          </List>
+          </Box>
+          <Divider />
+          <Stack direction="row" spacing={3} sx={{justifyContent: 'center', alignItems: 'center', pt:5 }}>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <IconButton aria-label="facebook" size="large" 
+                  sx={{ 
+                    bgcolor: '#017598 ',  
+                    color: 'white', 
+                    '&:hover': { 
+                      bgcolor: '#0591a5' ,
+                    }
+                  }}
+                >
+                  <PhoneIcon />
+                </IconButton>
+              </a>
+            
+       
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <IconButton aria-label="facebook" size="large" 
+                  sx={{ 
+                    bgcolor: '#017598 ',  
+                    color: 'white', 
+                    '&:hover': { 
+                      bgcolor: '#0591a5' ,
+                    }
+                  }}
+                >
+                  <FacebookIcon />
+                </IconButton>
+              </a>
+            
+       
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <IconButton aria-label="facebook" size="large" 
+                  sx={{ 
+                    bgcolor: '#017598 ',  
+                    color: 'white', 
+                    '&:hover': { 
+                      bgcolor: '#0591a5' ,
+                    }
+                  }}
+                >
+                  <FacebookIcon />
+                </IconButton>
+              </a>
+            
+       
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <IconButton aria-label="facebook" size="large" 
+                  sx={{ 
+                    bgcolor: '#017598 ',  
+                    color: 'white', 
+                    '&:hover': { 
+                      bgcolor: '#0591a5' ,
+                    }
+                  }}
+                >
+                  <FacebookIcon />
+                </IconButton>
+              </a>
+            
+          </Stack>
         </Box>
       </Drawer>
     </Box>
